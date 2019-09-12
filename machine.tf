@@ -1,5 +1,5 @@
 # Create a new instance of the latest Ubuntu 14.04 on an
-# t2.micro node with an AWS Tag naming it "HelloWorld"
+# t2.micro node with an AWS Tag naming it "hellopatrick"
 provider "aws" {
   region = "us-west-2"
 }
@@ -25,6 +25,6 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "hellopatrick"
   }
 }
